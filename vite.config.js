@@ -1,0 +1,2 @@
+// base: '/coding-magia/'
+
