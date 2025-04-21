@@ -1,3 +1,70 @@
-<header>
-    <h1>1</h1>
-</header>
+<header class="header">
+    <div class="container1">
+      <div class="header__container">
+        <img src="./img/svg/logo.svg" alt="">
+        <nav class="header__nav">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link" data-dropdown-open>
+                Інтерактив
+                <svg class="header__nav-arrow" width="15" height="15" data-dropdown-arrow>
+                  <use href="img/svg/arrow.svg"></use>
+                </svg>
+              </a>
+              <ul class="header__dropdown" data-dropdown>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="all">
+                    Всі
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="numerical">
+                    Числовий
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="game">
+                    Ігровий
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="acquaintance">
+                    Ознайомчий
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#ourTeam" class="header__nav-link link">Наша команда</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#footer" class="header__nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <img src="./img/svg/sun.svg" alt="Light Mode" id="theme-icon">
+      </div>
+  
+      <script>
+        function toggleTheme() {
+          const body = document.body;
+          const themeIcon = document.getElementById('theme-icon');
+          if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            themeIcon.src = "./img/svg/sun.svg"; // Change to sun icon
+            themeIcon.alt = "Light Mode";
+          } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            themeIcon.src = "./img/svg/moon.svg"; // Change to moon icon
+            themeIcon.alt = "Dark Mode";
+          }
+        }
+      </script>
+      <p class="header__welcome-text" id="output" data-welcome-open></p>
+    </div>
+  </header>
