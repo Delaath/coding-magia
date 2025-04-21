@@ -9,19 +9,188 @@
     <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-DpncBpyF.css">
   </head>
   <body>
-    <header>
-    <h1>1</h1>
-</header>
+    <header class="header">
+    <div class="container1">
+      <div class="header__container">
+        <img src="/coding-magia/assets/logo-DWVwfSY6.svg" alt="">
+        <nav class="header__nav">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link" data-dropdown-open>
+                Інтерактив
+                <svg class="header__nav-arrow" width="15" height="15" data-dropdown-arrow>
+                  <use href="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"></use>
+                </svg>
+              </a>
+              <ul class="header__dropdown" data-dropdown>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="all">
+                    Всі
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="numerical">
+                    Числовий
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="game">
+                    Ігровий
+                  </button>
+                </li>
+                <li class="header__dropdown-item">
+                  <button type="button" class="header__dropdown-btn" data-changeBtn="acquaintance">
+                    Ознайомчий
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#ourTeam" class="header__nav-link link">Наша команда</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#footer" class="header__nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <img src="/coding-magia/assets/sun-Csc7_hJa.svg" alt="Light Mode" id="theme-icon">
+      </div>
+  
+      <script>
+        function toggleTheme() {
+          const body = document.body;
+          const themeIcon = document.getElementById('theme-icon');
+          if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            themeIcon.src = "./img/svg/sun.svg"; // Change to sun icon
+            themeIcon.alt = "Light Mode";
+          } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            themeIcon.src = "./img/svg/moon.svg"; // Change to moon icon
+            themeIcon.alt = "Dark Mode";
+          }
+        }
+      </script>
+      <p class="header__welcome-text" id="output" data-welcome-open></p>
+    </div>
+  </header>
     <h1>2</h1>
     <h1>3</h1>
     <h1>4</h1>
     <h1>5</h1>
     <h1>6</h1>
-    <h1>7</h1>
+    <section data-sect="numerical" class="time_calculator">
+    <h3 class="title-random">Калькулятор часу</h3>
+    <div class="time-calculator-container">
+      <div class="box-input box-input2 time-calculator-input-box">
+        <input type="number" id="time-calculator-input" placeholder="Введіть число">
+        <button class="random-btn time-calculator-button" onclick="calculateTime()">
+          <img src="img/svg/search.svg" class="search-btn" alt="search"></button>
+      </div>
+      <div class="dots-result-box">
+        <div class="time-dots">--------------------------</div>
+        <span id="time-calculator-result">...</span>
+      </div>
+    </div>
+  
+  
+    <script>
+      function calculateTime() {
+        const input = document.getElementById("time-calculator-input").value;
+        const result = document.getElementById("time-calculator-result");
+  
+        if (input) {
+          const totalSeconds = parseInt(input, 10);
+          const days = Math.floor(totalSeconds / (24 * 3600));
+          const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+          const minutes = Math.floor((totalSeconds % 3600) / 60);
+          const seconds = totalSeconds % 60;
+  
+          result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
+          result.style.display = "inline";
+        } else {
+          result.textContent = "...";
+          result.style.display = "none";
+        }
+      }
+    </script>
+  
+  
+    <div class="line-box">
+      <hr class="random-line"/>
     <h1>8</h1>
     <h1>9</h1>
     <h1>10</h1>
-    <h1>11</h1>
+    <section class="team">
+
+    <h2 class="title-random">Tean 404 Not Found</h2>
+  
+    <div class="carousel-container">
+      <div class="arrow arrow-left" onclick="changeSlide(-1)">
+        <img src="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="arrow-svg">
+      </div>
+  
+  
+      <div class="slide">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">...</h3>
+        <p class="description">...</p>
+      </div>
+  
+      <div class="slide active">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">Чедрик Марія</h3>
+        <p class="description">Скрам-майстер, розробник</p>
+      </div>
+  
+      <div class="slide">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">...</h3>
+        <p class="description">...</p>
+      </div>
+  
+      <div class="arrow arrow-right" onclick="changeSlide(1)">
+        <img src="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="arrow-svg">
+      </div>
+    </div>
+  
+    <div class="dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+    </div>
+  
+    <script>
+      let currentSlide = 0;
+      let slides = document.querySelectorAll('.slide');
+      let dots = document.querySelectorAll('.dot');
+  
+      function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+  
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+  
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      }
+  
+      function setSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+  
+        currentSlide = index;
+  
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      }
+    </script>
+  </section>
     <h1>12</h1>
     <h1>13</h1>
   </body>
