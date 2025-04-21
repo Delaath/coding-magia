@@ -1,1 +1,65 @@
-<h1>11</h1>
+<section class="team">
+
+    <h2 class="title-random">Tean 404 Not Found</h2>
+  
+    <div class="carousel-container">
+      <div class="arrow arrow-left" onclick="changeSlide(-1)">
+        <img src="img/svg/arrow.svg" class="arrow-svg">
+      </div>
+  
+  
+      <div class="slide">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">...</h3>
+        <p class="description">...</p>
+      </div>
+  
+      <div class="slide active">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">Чедрик Марія</h3>
+        <p class="description">Скрам-майстер, розробник</p>
+      </div>
+  
+      <div class="slide">
+        <img src="" class="profile-pic" alt="Фото студента">
+        <h3 class="name">...</h3>
+        <p class="description">...</p>
+      </div>
+  
+      <div class="arrow arrow-right" onclick="changeSlide(1)">
+        <img src="img/svg/arrow.svg" class="arrow-svg">
+      </div>
+    </div>
+  
+    <div class="dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+    </div>
+  
+    <script>
+      let currentSlide = 0;
+      let slides = document.querySelectorAll('.slide');
+      let dots = document.querySelectorAll('.dot');
+  
+      function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+  
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+  
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      }
+  
+      function setSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+  
+        currentSlide = index;
+  
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      }
+    </script>
+  </section>
