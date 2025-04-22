@@ -378,3 +378,78 @@ body {
 .dot.active {
   background: gray;
 }
+
+footer {
+  background-color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 0;
+}
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.subscribe-form input[type=email] {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #D7D7D7;
+  padding: 10px 80px 10px 10px;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.subscribe-form input[type=email]:focus {
+  border-color: #000000;
+}
+.subscribe-form button {
+  padding: 10px;
+  border-radius: 20px;
+  background: #000;
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #000;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.subscribe-form button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
