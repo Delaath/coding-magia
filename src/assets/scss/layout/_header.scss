@@ -39,7 +39,7 @@
             font-weight: 400;
             line-height: normal;
             font-style: normal;
-            @include transition(color);
+            // @include transition(color);
 
             &:hover {
                 cursor: var(--cursor);
@@ -60,7 +60,7 @@
 
         &-arrow {
             stroke: #292d32;
-            @include transition(stroke);
+            // @include transition(stroke);
 
             &.rotate {
                 transform: rotate(180deg);
@@ -105,7 +105,7 @@
             font-style: normal;
             color: var(--text-color);
             background-color: var(--background-color);
-            @include transition(color);
+            // @include transition(color);
 
             &:last-child {
                 border-radius: 0 0 20px 20px;
@@ -147,7 +147,7 @@
         font-weight: 400;
         line-height: normal;
         font-style: normal;
-        @include transition(color);
+        // @include transition(color);
 
         &:hover {
             cursor: var(--cursor);
