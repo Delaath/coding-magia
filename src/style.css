@@ -1,0 +1,29 @@
+/* @import './assets/scss/base/reset';
+@import './assets/scss/base/containers';
+@import './assets/scss/base/typography';
+
+@import './assets/scss/abstracts/variables';
+@import './assets/scss/abstracts/mixins';
+
+@import './assets/scss/components/button';
+@import './assets/scss/components/form';
+
+@import './assets/scss/layout/header';
+@import './assets/scss/layout/hero';
+@import './assets/scss/layout/birthday';
+@import './assets/scss/layout/guess';
+@import './assets/scss/layout/calculator';
+@import './assets/scss/layout/time-calculator';
+@import './assets/scss/layout/google-dino';
+@import './assets/scss/layout/football';
+@import './assets/scss/layout/rps';
+@import './assets/scss/layout/three-numbers';
+@import './assets/scss/layout/team';
+@import './assets/scss/layout/scientist';
+@import './assets/scss/layout/footer';
+
+@import './assets/scss/themes/light';
+@import './assets/scss/themes/dark';
+
+@import './assets/scss/vendors/bootstrap';
+ */
