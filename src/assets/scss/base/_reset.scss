@@ -11,21 +11,25 @@ p,
 ol,
 ul,
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
-body{
+body {
+  @media screen and (min-width: 480px) {
     background-image: url(./img/coding_magic-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  @media screen and (min-width: 768px) {
+  }
 }
