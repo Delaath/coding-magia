@@ -1,13 +1,24 @@
-<section data-sect="numerical" class="time_calculator">
-    <h3 class="title-random">Калькулятор часу</h3>
+<section data-sect="numerical" class="time_calculator container">
+    <h3 class="title-birhday">Калькулятор часу</h3>
     <div class="time-calculator-container">
-      <div class="box-input box-input2 time-calculator-input-box">
+      <div class="birhday-block">
+        <input
+          class="birhday-input"
+          type="text"
+          placeholder="Введіть число"
+          value=""
+        />
+        <button class="birhday-btn" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <!-- <div class="box-input box-input2 time-calculator-input-box">
         <input type="number" id="time-calculator-input" placeholder="Введіть число">
         <button class="random-btn time-calculator-button" onclick="calculateTime()">
           <img src="img/svg/search.svg" class="search-btn" alt="search"></button>
-      </div>
+      </div> -->
       <div class="dots-result-box">
-        <div class="time-dots">--------------------------</div>
+        <div class="time-dots">-</div>
         <span id="time-calculator-result">...</span>
       </div>
     </div>
@@ -33,8 +44,6 @@
         }
       }
     </script>
-  
-  
-    <div class="line-box">
-      <hr class="random-line"/>
+      <hr class="line-birhday" />
+</section>
       

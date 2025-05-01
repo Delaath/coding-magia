@@ -1,34 +1,45 @@
-.time-calculator-container {
-    display: flex;
-    padding-bottom: 30px;
-}
+// .time-calculator-container {
+//     display: flex;
+//     padding-bottom: 30px;
+// }
 
-.time-calculator-input {
-    padding: 10px;
-    width: 150px;
-    font-size: 12px;
-}
+// .time-calculator-input {
+//     padding: 10px;
+//     width: 150px;
+//     font-size: 12px;
+// }
 
-.time-btn {
-    position: absolute;
-    padding: 9px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-}
-.dots-result-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .time-btn {
+//     position: absolute;
+//     padding: 9px;
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     right: 0;
+// }
+// .dots-result-box {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-#time-calculator-result {
-   padding-left: 40px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.63px;
-    display: none;
+// #time-calculator-result {
+//    padding-left: 40px;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 14.63px;
+//     display: none;
+// }
+.time-calculator {
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-between;
+  font-family: Montserrat Alternates;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
 }

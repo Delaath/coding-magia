@@ -1,7 +1,8 @@
 .team {
-    padding-bottom: 20px;
-}
-.carousel-container {
+  padding-bottom: 20px;
+  font-family: Montserrat Alternates;
+  
+  .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,77 +10,82 @@
     width: 100%;
     max-width: 600px;
     margin: auto;
-}
+  }
 
-.arrow-svg {
+  .arrow-svg {
     width: 50px;
     height: 100px;
     border-width: 1px;
-}
+  }
 
-.arrow {
+  .arrow {
     cursor: pointer;
     font-size: 30px;
     user-select: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
+  }
 
-.arrow-left {
+  .arrow-left {
     left: 10px;
     transform: rotate(90deg);
-}
+  }
 
-.arrow-right {
+  .arrow-right {
     right: 10px;
     transform: rotate(-90deg);
-}
+  }
 
-.slide {
+  .slide {
     display: none;
     text-align: center;
-}
+  }
 
-.slide.active {
+  .slide.active {
     display: block;
-}
+  }
 
-.name {
+  .name {
     font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
-}
+  }
 
-.description {
+  .description {
     font-weight: 400;
     font-size: 12px;
     line-height: 14.63px;
-}
+  }
 
-.profile-pic {
+  .profile-pic {
     width: 120px;
     height: 120px;
     margin: 20px auto;
     object-fit: cover;
     border-radius: 20px;
-}
+  }
 
-.dots {
+  .dots {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+  }
 
-.dot {
+  .dot {
     width: 10px;
     height: 10px;
     margin: 0 5px;
     background: lightgray;
     border-radius: 50%;
     cursor: pointer;
-}
+  }
 
-.dot.active {
+  .dot.active {
     background: gray;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
 }
