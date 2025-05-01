@@ -33,12 +33,14 @@
 //     display: none;
 // }
 .time-calculator {
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-between;
   font-family: Montserrat Alternates;
 
   @media screen and (min-width: 480px) {
+    .time-calculator-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
   }
   @media screen and (min-width: 768px) {
   }
