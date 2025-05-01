@@ -7,12 +7,14 @@
     <title>Coding Magic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-DSgOA1rC.css">
+    <script type="module" crossorigin src="/coding-magia/assets/index-B0KEPtRm.js"></script>
+    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-AmpdA6BP.css">
   </head>
   <body>
-    <header class="header container">
+    <div class="background-box">
+      <header class="header container">
   <img src="/coding-magia/assets/logo-DWVwfSY6.svg" alt="" />
-  <p class="welcome-text" id="output" data-welcome-open>Hello User</p>
+  <p class="welcome-text" id="output" data-welcome-open></p>
   <div class="theme-toggle" onclick="toggleTheme()">
     <img src="/coding-magia/assets/sun-Csc7_hJa.svg" alt="Light Mode" id="theme-icon" />
   </div>
@@ -102,6 +104,30 @@
     </li>
   </ul>
 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="modal-text">Привіт!</p>
+      <p class="modal-text">
+        Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що вам
+        сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно провести
+        час!
+      </p>
+      <p class="modal-text modal-ask">Введіть своє ім’я:</p>
+      <div class="modal-input-box">
+        <input
+        id="modal-input"
+          type="name"
+          placeholder="Ваше ім’я..."
+          class="modal-input birhday-input"
+        />
+      </div>
+      <div class="modal-btn-box"><button class="modal-btn" id="myBtn">Зберегти</button></div>
+    </div>
+  </div>
+
+</div>
+
   <script>
     function toggleTheme() {
       const body = document.body;
@@ -140,11 +166,12 @@
   </script>
 </header>
 
-    <section class="hero container">
+      <main>
+      <section class="hero container">
     <h1 class="title-hero">Популярні інетрактивні ігри</h1>
     <hr class="line-hero">
 </section>
-    <section class="birhday-check container">
+      <section class="birhday-check container">
   <h3 class="title-birhday">Перевір в який рік ти народився</h3>
   <div class="birhday-block">
     <input
@@ -161,7 +188,7 @@
   <hr class="line-birhday" />
 </section>
 
-    <section class="guess-number container">
+      <section class="guess-number container">
   <h3 class="title-guess-number">Вгадай число, яке загадав комп’ютер</h3>
   <div class="guess-block">
     <input
@@ -177,9 +204,9 @@
   <hr class="line-guess" />
 </section>
 
-    <h1>5</h1>
-    <h1>6</h1>
-    <section data-sect="numerical" class="time_calculator container">
+      <h1>5</h1>
+      <h1>6</h1>
+      <section data-sect="numerical" class="time_calculator container">
     <h3 class="title-birhday">Калькулятор часу</h3>
     <div class="time-calculator-container">
       <div class="birhday-block">
@@ -199,7 +226,6 @@
           <img src="img/svg/search.svg" class="search-btn" alt="search"></button>
       </div> -->
       <div class="dots-result-box">
-        <div class="time-dots">-</div>
         <span id="time-calculator-result">...</span>
       </div>
     </div>
@@ -228,10 +254,10 @@
       <hr class="line-birhday" />
 </section>
       
-    <h1>8</h1>
-    <h1>9</h1>
-    <h1>10</h1>
-    <section class="team container">
+      <h1>8</h1>
+      <h1>9</h1>
+      <h1>10</h1>
+      <section class="team container">
 
     <h2 class="title-birhday">CodeStorm</h2>
   
@@ -256,7 +282,7 @@
 
       <div class="slide">
         <img src="/coding-magia/assets/mariia-BOpZRNTu.png" class="profile-pic" alt="Фото студента">
-        <h3 class="name">Chedryk</h3>
+        <h3 class="name">Chedryk Mariia</h3>
         <p class="description">Scram, developer</p>
       </div>
 
@@ -299,7 +325,8 @@
       <hr class="line-birhday" />
   </section>
   
-    <h1>12</h1>
+      <h1>12</h1>
+      </main>
     <footer class="footer">
     <section class="container footer">
         <img src="/coding-magia/assets/logo-DWVwfSY6.svg" alt="logo">
@@ -330,5 +357,6 @@
         </form>
     </section>
 </footer>
+  </div>
   </body>
 </html>
