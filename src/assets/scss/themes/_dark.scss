@@ -47,7 +47,9 @@ body {
     background-color: #1a1a1a;
     color: white;
   }
-  
+  .dark-mode hr {
+    background-color: white;
+  }
   .dark-mode * {
     color: white !important; 
   }
