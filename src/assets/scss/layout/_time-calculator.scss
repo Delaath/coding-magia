@@ -1,47 +1,30 @@
-// .time-calculator-container {
-//     display: flex;
-//     padding-bottom: 30px;
-// }
-
-// .time-calculator-input {
-//     padding: 10px;
-//     width: 150px;
-//     font-size: 12px;
-// }
-
-// .time-btn {
-//     position: absolute;
-//     padding: 9px;
-//     border-top-left-radius: 0;
-//     border-bottom-left-radius: 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     right: 0;
-// }
-// .dots-result-box {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// #time-calculator-result {
-//    padding-left: 40px;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 14.63px;
-//     display: none;
-// }
 .time-calculator {
   font-family: Montserrat Alternates;
 
+  .dots-result-box {
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (min-width: 480px) {
     .time-calculator-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
   @media screen and (min-width: 768px) {
+    .time-calculator-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .line {
+      width: 400px;
+    }
   }
 }

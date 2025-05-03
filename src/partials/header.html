@@ -1,9 +1,28 @@
 <header class="header container">
-  <img src="./img/svg/logo.svg" alt="" />
+  <img class="logo" src="./img/svg/logo.svg" alt="" />
+  <div class="dropdown">
+    <button class="dropdown-toggle">
+      Інтерактив <img class="arrow" src="./img/svg/arrow.svg" alt="arrow">
+    </button>
+    <div class="dropdown-menu">
+      <a href="#">Числовий</a>
+      <a href="#">Ігровий</a>
+      <a href="#">Ознайомчий</a>
+    </div>
+  </div>
+  
+  <ul class="header-link-list">
+    <li class="header-link-item">Наша команда</li>
+    <li class="header-link-item item2">Контакти</li>
+  </ul>
   <p class="welcome-text" id="output" data-welcome-open></p>
   <div class="theme-toggle" onclick="toggleTheme()">
-    <img src="./img/svg/sun.svg" alt="Light Mode" id="theme-icon" />
+    <div class="toggle-circle">
+      <img src="./img/svg/moon.svg" alt="Theme Icon" id="theme-icon" />
+    </div>
   </div>
+  
+  
   <button id="myBtn-menu" class="menu-btn">
     <img src="./img/svg/menu_24px.svg" alt="" />
   </button>
@@ -30,66 +49,6 @@
     </div>
   </div>
 
-  <ul class="nav-list">
-    <li class="nav-item">
-      <a class="nav-link link" data-dropdown-open>
-        Інтерактив
-        <svg
-          class="header-nav-arrow"
-          width="15"
-          height="15"
-          data-dropdown-arrow
-        >
-          <use href="img/svg/arrow.svg"></use>
-        </svg>
-      </a>
-      <ul class="header-dropdown" data-dropdown>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="all"
-          >
-            Всі
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="numerical"
-          >
-            Числовий
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="game"
-          >
-            Ігровий
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="acquaintance"
-          >
-            Ознайомчий
-          </button>
-        </li>
-      </ul>
-    </li>
-    <li class="header-nav-item">
-      <a href="#ourTeam" class="header-nav-link link">Наша команда</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#footer" class="header-nav-link link">Контакти</a>
-    </li>
-  </ul>
-
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -114,40 +73,4 @@
 
 </div>
 
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      const themeIcon = document.getElementById("theme-icon");
-      if (body.classList.contains("dark-mode")) {
-        body.classList.remove("dark-mode");
-        body.classList.add("light-mode");
-        themeIcon.src = "./img/svg/sun.svg"; // Change to sun icon
-        themeIcon.alt = "Light Mode";
-      } else {
-        body.classList.remove("light-mode");
-        body.classList.add("dark-mode");
-        themeIcon.src = "./img/svg/moon.svg"; // Change to moon icon
-        themeIcon.alt = "Dark Mode";
-      }
-    }
-
-    var modal = document.getElementById("myModal-menu");
-
-    var btn = document.getElementById("myBtn-menu");
-
-    var span = document.getElementsByClassName("close-menu")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-      modal.style.visibility = "visible";
-    };
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
 </header>
