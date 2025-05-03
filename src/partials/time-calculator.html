@@ -1,48 +1,37 @@
 <section data-sect="numerical" class="time_calculator container">
-    <h3 class="title-birhday">Калькулятор часу</h3>
-    <div class="time-calculator-container">
-      <div class="birhday-block">
-        <input
-          class="birhday-input"
-          type="text"
-          placeholder="Введіть число"
-          value=""
-        />
-        <button class="birhday-btn" type="button">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <!-- <div class="box-input box-input2 time-calculator-input-box">
-        <input type="number" id="time-calculator-input" placeholder="Введіть число">
-        <button class="random-btn time-calculator-button" onclick="calculateTime()">
-          <img src="img/svg/search.svg" class="search-btn" alt="search"></button>
-      </div> -->
-      <div class="dots-result-box">
-        <span id="time-calculator-result">...</span>
-      </div>
+  <h3 class="title-birhday">Калькулятор часу</h3>
+  <div class="time-calculator-container">
+    <div class="birhday-block">
+      <input class="birhday-input time-calculator-input-box" id="time-calculator-input" type="number" placeholder="Введіть число" value=""/>
+      <button class="birhday-btn time-calculator-button" onclick="calculateTime()">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
-  
-  
-    <script>
-      function calculateTime() {
-        const input = document.getElementById("time-calculator-input").value;
-        const result = document.getElementById("time-calculator-result");
-  
-        if (input) {
-          const totalSeconds = parseInt(input, 10);
-          const days = Math.floor(totalSeconds / (24 * 3600));
-          const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-          const minutes = Math.floor((totalSeconds % 3600) / 60);
-          const seconds = totalSeconds % 60;
-  
-          result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
-          result.style.display = "inline";
-        } else {
-          result.textContent = "...";
-          result.style.display = "none";
-        }
+    <div class="dots-result-box">
+      <span id="time-calculator-result">...</span>
+    </div>
+  </div>
+
+  <hr class="line" />
+
+  <script>
+    function calculateTime() {
+      const input = document.getElementById("time-calculator-input").value;
+      const result = document.getElementById("time-calculator-result");
+
+      if (input) {
+        const totalSeconds = parseInt(input, 10);
+        const days = Math.floor(totalSeconds / (24 * 3600));
+        const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
+        result.style.display = "inline";
+      } else {
+        result.textContent = "...";
+        result.style.display = "none";
       }
-    </script>
-      <hr class="line-birhday" />
+    }
+  </script>
 </section>
-      
