@@ -7,17 +7,35 @@
     <title>Coding Magic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="module" crossorigin src="/coding-magia/assets/index-B0KEPtRm.js"></script>
-    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-AmpdA6BP.css">
+    <script type="module" crossorigin src="/coding-magia/assets/index-8C-R7HYR.js"></script>
+    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-RDcZu_jW.css">
   </head>
   <body>
-    <div class="background-box">
       <header class="header container">
-  <img src="/coding-magia/assets/logo-DWVwfSY6.svg" alt="" />
+  <img class="logo" src="/coding-magia/assets/logo-DWVwfSY6.svg" alt="" />
+  <div class="dropdown">
+    <button class="dropdown-toggle">
+      Інтерактив <img class="arrow" src="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="arrow">
+    </button>
+    <div class="dropdown-menu">
+      <a href="#">Числовий</a>
+      <a href="#">Ігровий</a>
+      <a href="#">Ознайомчий</a>
+    </div>
+  </div>
+  
+  <ul class="header-link-list">
+    <li class="header-link-item">Наша команда</li>
+    <li class="header-link-item item2">Контакти</li>
+  </ul>
   <p class="welcome-text" id="output" data-welcome-open></p>
   <div class="theme-toggle" onclick="toggleTheme()">
-    <img src="/coding-magia/assets/sun-Csc7_hJa.svg" alt="Light Mode" id="theme-icon" />
+    <div class="toggle-circle">
+      <img src="/coding-magia/assets/moon-DdmvcQM3.svg" alt="Theme Icon" id="theme-icon" />
+    </div>
   </div>
+  
+  
   <button id="myBtn-menu" class="menu-btn">
     <img src="data:image/svg+xml,%3csvg%20width='31'%20height='21'%20viewBox='0%200%2031%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%203.5V0H31V3.5H0ZM0%2012.25H31V8.74999H0V12.25ZM0%2021H31V17.5H0V21Z'%20fill='black'/%3e%3c/svg%3e" alt="" />
   </button>
@@ -44,66 +62,6 @@
     </div>
   </div>
 
-  <ul class="nav-list">
-    <li class="nav-item">
-      <a class="nav-link link" data-dropdown-open>
-        Інтерактив
-        <svg
-          class="header-nav-arrow"
-          width="15"
-          height="15"
-          data-dropdown-arrow
-        >
-          <use href="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"></use>
-        </svg>
-      </a>
-      <ul class="header-dropdown" data-dropdown>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="all"
-          >
-            Всі
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="numerical"
-          >
-            Числовий
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="game"
-          >
-            Ігровий
-          </button>
-        </li>
-        <li class="header-dropdown-item">
-          <button
-            type="button"
-            class="header__dropdown-btn"
-            data-changeBtn="acquaintance"
-          >
-            Ознайомчий
-          </button>
-        </li>
-      </ul>
-    </li>
-    <li class="header-nav-item">
-      <a href="#ourTeam" class="header-nav-link link">Наша команда</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#footer" class="header-nav-link link">Контакти</a>
-    </li>
-  </ul>
-
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -128,42 +86,6 @@
 
 </div>
 
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      const themeIcon = document.getElementById("theme-icon");
-      if (body.classList.contains("dark-mode")) {
-        body.classList.remove("dark-mode");
-        body.classList.add("light-mode");
-        themeIcon.src = "./img/svg/sun.svg"; // Change to sun icon
-        themeIcon.alt = "Light Mode";
-      } else {
-        body.classList.remove("light-mode");
-        body.classList.add("dark-mode");
-        themeIcon.src = "./img/svg/moon.svg"; // Change to moon icon
-        themeIcon.alt = "Dark Mode";
-      }
-    }
-
-    var modal = document.getElementById("myModal-menu");
-
-    var btn = document.getElementById("myBtn-menu");
-
-    var span = document.getElementsByClassName("close-menu")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-      modal.style.visibility = "visible";
-    };
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
 </header>
 
       <main>
@@ -207,54 +129,53 @@
       <h1>5</h1>
       <h1>6</h1>
       <section data-sect="numerical" class="time_calculator container">
-    <h3 class="title-birhday">Калькулятор часу</h3>
-    <div class="time-calculator-container">
-      <div class="birhday-block">
-        <input
-          class="birhday-input"
-          type="text"
-          placeholder="Введіть число"
-          value=""
-        />
-        <button class="birhday-btn" type="button">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <!-- <div class="box-input box-input2 time-calculator-input-box">
-        <input type="number" id="time-calculator-input" placeholder="Введіть число">
-        <button class="random-btn time-calculator-button" onclick="calculateTime()">
-          <img src="img/svg/search.svg" class="search-btn" alt="search"></button>
-      </div> -->
-      <div class="dots-result-box">
-        <span id="time-calculator-result">...</span>
-      </div>
+  <h3 class="title-birhday">Калькулятор часу</h3>
+  <div class="time-calculator-container">
+    <div class="birhday-block">
+      <input class="birhday-input time-calculator-input-box" id="time-calculator-input" type="number" placeholder="Введіть число" value=""/>
+      <button class="birhday-btn time-calculator-button" onclick="calculateTime()">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
-  
-  
-    <script>
-      function calculateTime() {
-        const input = document.getElementById("time-calculator-input").value;
-        const result = document.getElementById("time-calculator-result");
-  
-        if (input) {
-          const totalSeconds = parseInt(input, 10);
-          const days = Math.floor(totalSeconds / (24 * 3600));
-          const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-          const minutes = Math.floor((totalSeconds % 3600) / 60);
-          const seconds = totalSeconds % 60;
-  
-          result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
-          result.style.display = "inline";
-        } else {
-          result.textContent = "...";
-          result.style.display = "none";
-        }
+    <div class="dots-result-box">
+      <span id="time-calculator-result">...</span>
+    </div>
+  </div>
+
+  <hr class="line" />
+
+  <script>
+    function calculateTime() {
+      const input = document.getElementById("time-calculator-input").value;
+      const result = document.getElementById("time-calculator-result");
+
+      if (input) {
+        const totalSeconds = parseInt(input, 10);
+        const days = Math.floor(totalSeconds / (24 * 3600));
+        const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
+        result.style.display = "inline";
+      } else {
+        result.textContent = "...";
+        result.style.display = "none";
       }
-    </script>
-      <hr class="line-birhday" />
+    }
+  </script>
 </section>
-      
-      <h1>8</h1>
+
+      <section class="google-dino">
+    <h1 class="title-birhday">Google динозавр</h1>
+    <canvas id="gameCanvas" width="600" height="200"></canvas> <!-- Зменшено ширину гри -->
+    <div class="box-dino"><button id="restartButton" class="restart-btn">Restart</button> </div><!-- Додано клас до кнопки -->
+    <img id="dinoImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAeUExURf///1JSUvf39/39/f7+/vb29vv7++7u7vr6+v///6dh75QAAAAKdFJOU////////////wCyzCzPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGrmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozNjU5Mjc0ZC04MDNkLTc3NGYtOWNhOS05MjJkMGI4NGYwNDQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozMDhhODRlYS0xYzQ4LTdiNGYtYTk0MC1iMTMxNGE2YWMwZTAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MGY5M2ZmYjYtOWU2Zi1mNTQ0LWEwNDYtYmU3NDkzM2YzN2ZkIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIyLTA4LTE4VDEwOjEyOjM5LTA2OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0xMS0wOVQwODoyMToyMS0wNjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0xMS0wOVQwODoyMToyMS0wNjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNjU5Mjc0ZC04MDNkLTc3NGYtOWNhOS05MjJkMGI4NGYwNDQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzY1OTI3NGQtODAzZC03NzRmLTljYTktOTIyZDBiODRmMDQ0Ii8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjRlNTI2NjE2LTYxMTYtODA0My05NWQ0LWExZmIzZWU2NzZkZSIgc3RFdnQ6d2hlbj0iMjAyMy0xMS0wOVQwODoyMToyMS0wNjowMCIgc3RFdnQ6c29mdHdhcmVB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">
+    <img id="cactusImage" src="data:image/png;base64,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">
+    <div class="line-box">
+        <hr class="random-line" />
+    </div>
+</section>
       <h1>9</h1>
       <h1>10</h1>
       <section class="team container">
@@ -268,14 +189,14 @@
   
   
       <div class="slide">
-        <img src="" class="profile-pic" alt="Фото студента">
+        <img src="/coding-magia/assets/danyl-ck4WN9PA.png" class="profile-pic" alt="Фото студента">
         <h3 class="name">Danyl</h3>
         <p class="description">Team-leader, developer</p>
       </div>
   
   
       <div class="slide active">
-        <img src="" class="profile-pic" alt="Фото студента">
+        <img src="/coding-magia/assets/daryna-B-FNI95y.png" class="profile-pic" alt="Фото студента">
         <h3 class="name">Petkanych Daryna</h3>
         <p class="description">Developer</p>
       </div>
@@ -357,6 +278,5 @@
         </form>
     </section>
 </footer>
-  </div>
   </body>
 </html>
