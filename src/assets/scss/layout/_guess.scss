@@ -1,3 +1,5 @@
+
+@media (min-width:320px){
 .title-guess-number {
   color: black;
   font-size: 14px;
@@ -9,15 +11,22 @@
   padding-top: 13px;
 }
 
+.all-guess{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .guess-block{
-  display: flex;
+    display: flex;
   justify-content: center;
 
   padding-top: 22px;
-  padding-bottom: 41px;
+  padding-bottom: 14px;
 }
 
 .guess-input {
+    display: flex;
+
   color: #7e7e7e;
   background-color: #d7d7d7;
   border: none;
@@ -31,5 +40,28 @@
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
 
-  margin-left: -10px;
+  border: none;
+
+  margin-left: -12px;
+}
+
+.result-guess{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+}
+}
+@media (min-width:436.98px){
+    .all-guess{
+        flex-direction: column;
+    }
+}
+@media (min-width:767.98px){
+
+    .all-guess{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
 }

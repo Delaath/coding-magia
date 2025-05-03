@@ -1,9 +1,29 @@
+
+@media (min-width:320px){
+
+.title-birhday {
+  color: black;
+  font-size: 14px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  word-wrap: break-word;
+
+  text-align: center;
+
+  padding-top: 13px;
+}
+.all-birthday{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .birhday-block {
   display: flex;
   justify-content: center;
 
   padding-top: 22px;
-  padding-bottom: 41px;
+  padding-bottom: 14px;
 }
 
 .birhday-input {
@@ -11,7 +31,6 @@
   background-color: #d7d7d7;
   border: none;
   border-radius: 14px;
-  font-family: Montserrat Alternates;
   padding: 10px;
 }
 
@@ -20,8 +39,29 @@
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   border: none;
-  margin-left: -10px;
+  margin-left: -12px;
 }
 .fas {
   color: white;
+}
+
+.result-birthday{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 14px;
+}
+}
+@media (min-width:436.98px){
+  .all-birthday{
+      flex-direction: column;
+  }
+}
+@media (min-width:767.98px){
+
+  .all-birthday{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-direction: row;
+  }
 }
