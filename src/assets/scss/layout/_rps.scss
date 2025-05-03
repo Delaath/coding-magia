@@ -1,0 +1,46 @@
+.rps {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+
+  .rps-title {
+    padding-top: 20px;
+  }
+.rps-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .buttons button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    transition: background 0.3s;
+  }
+  .buttons button:hover {
+    background-color: #424242;
+  }
+  #result,
+  #computer-choice,
+  #score {
+    padding-top: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 0 290px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
