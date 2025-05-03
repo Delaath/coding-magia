@@ -7,8 +7,8 @@
     <title>Coding Magic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="module" crossorigin src="/coding-magia/assets/index-8C-R7HYR.js"></script>
-    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-RDcZu_jW.css">
+    <script type="module" crossorigin src="/coding-magia/assets/index-BHjN_Z0r.js"></script>
+    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-VwhudrDs.css">
   </head>
   <body>
       <header class="header container">
@@ -95,16 +95,19 @@
 </section>
       <section class="birhday-check container">
   <h3 class="title-birhday">Перевір в який рік ти народився</h3>
-  <div class="birhday-block">
-    <input
-      class="birhday-input"
-      type="text"
-      placeholder="Введіть рік народження"
-      value=""
-    />
-    <button class="birhday-btn" type="button">
-      <i class="fas fa-search"></i>
-    </button>
+  <div class="all-birthday">
+    <div class="birhday-block">
+      <input
+        class="birhday-input"
+        type="text"
+        id="yearInput"
+        placeholder="Введіть рік народження"
+      />
+      <button class="birhday-btn" id="searchBtn" type="button">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="result-birthday" id="resultText"></div>
   </div>
 
   <hr class="line-birhday" />
@@ -112,18 +115,21 @@
 
       <section class="guess-number container">
   <h3 class="title-guess-number">Вгадай число, яке загадав комп’ютер</h3>
-  <div class="guess-block">
-    <input
-      class="guess-input"
-      type="text-guess"
-      placeholder="Введіть число"
-      value=""
-    />
-    <button class="guess-btn" type="button-guess">
-      <i class="fas fa-search"></i>
-    </button>
+  <div class="all-guess">
+    <div class="guess-block">
+      <input
+        class="guess-input"
+        type="number"
+        placeholder="Введіть число"
+        id="guessInput"
+      />
+      <button class="guess-btn" id="checkBtn" type="button-guess">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="result-guess" id="guessText"></div>
   </div>
-  <hr class="line-guess" />
+  <hr class="line-guess container" />
 </section>
 
       <h1>5</h1>
