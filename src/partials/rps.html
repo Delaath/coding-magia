@@ -1,1 +1,22 @@
-<h1>5</h1>
+<section class="rps container">
+  <h3 class="rps-title">Камінь - ножиці - папір</h3>
+  <div class="buttons">
+    <button onclick="play('rock')">
+      <img src="./img/svg/rock.svg" alt="rock" />
+    </button>
+    <button onclick="play('paper')">
+      <img src="./img/svg/paper.svg" alt="paper" />
+    </button>
+    <button onclick="play('scissors')">
+      <img src="./img/svg/scissors.svg" alt="scissors" />
+    </button>
+  </div>
+  <div class="rps-box">
+    <div>
+      <div id="computer-choice" class="computer-choice"></div>
+      <div id="result"></div>
+      <div id="score">Player: 0 | Computer: 0</div>
+    </div>
+  </div>
+  <hr />
+</section>
