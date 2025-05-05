@@ -1,0 +1,71 @@
+@media (min-width: 320px) {
+    .three-numbers{
+        padding: 0 48px;
+    }
+  .all-block {
+  }
+  .title-number {
+    color: black;
+    font-size: 16px;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding: 36px;
+  }
+  .input-number {
+    color: #7e7e7e;
+    font-size: 12px;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    word-wrap: break-word;
+
+    background-color: #d7d7d7;
+    padding: 5px 10px;
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+  }
+  .block-number {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .text-number {
+    color: black;
+    font-size: 12px;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    word-wrap: break-word;
+
+    text-align: center;
+
+    padding: 36px 0 36px;
+
+  }
+}
+@media (min-width: 479.98px) {
+  .block-number {
+    gap: 10px;
+  }
+  .input-number {
+    padding: 10px 20px;
+    width: 135px;
+  }
+}
+@media (min-width: 767.98px) {
+    .three-numbers{
+        padding: 0 115px;
+    }
+    .block-number {
+      gap: 38px;
+    }
+  }
+  @media (min-width: 1999.98px) {
+    .three-numbers{
+        padding: 0 277px;
+    }
+  }
