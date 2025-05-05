@@ -1,3 +1,4 @@
+
 document.getElementById('calcBtn').addEventListener('click', () => {
     const vals = [
       document.getElementById('num1').value.trim(),
