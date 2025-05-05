@@ -1,5 +1,3 @@
-.hero {
-}
 
 .title-hero {
   color: black;
@@ -11,4 +9,20 @@
 
   padding-bottom: 30px;
   padding-top: 38px;
+}
+
+@media (min-width: 320px) {
+  .line-hero{
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 766.98px) {
+  .line-hero{
+    padding: 0 115px;
+  }
+}
+
+.line-hero{
+  padding: 0 452px;
 }
