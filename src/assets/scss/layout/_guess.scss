@@ -1,35 +1,82 @@
-.title-guess-number {
-  color: black;
-  font-size: 14px;
-  font-family: Montserrat Alternates;
-  font-weight: 400;
-  word-wrap: break-word;
+@media (min-width: 320px) {
+  .title-guess-number {
+    color: black;
+    font-size: 14px;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    word-wrap: break-word;
 
-  text-align: center;
-  padding-top: 13px;
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  .all-guess {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .guess-block {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 22px;
+    padding-bottom: 14px;
+  }
+
+  .guess-input {
+    display: flex;
+
+    color: #7e7e7e;
+    background-color: #d7d7d7;
+    border: none;
+    border-radius: 14px;
+
+    padding: 10px;
+  }
+
+  .guess-btn {
+    background-color: black;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+    border: none;
+
+    margin-left: -12px;
+  }
+
+  .result-guess {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+
+    font-size: 12px;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .guess-number{
+    padding: 0 48px;
+  }
 }
+@media (min-width: 436.98px) {
+  .all-guess {
+    flex-direction: column;
+  }
 
-.guess-block{
-  display: flex;
-  justify-content: center;
-
-  padding-top: 22px;
-  padding-bottom: 41px;
 }
-
-.guess-input {
-  color: #7e7e7e;
-  background-color: #d7d7d7;
-  border: none;
-  border-radius: 14px;
-
-  padding: 10px;
+@media (min-width: 767.98px) {
+  .all-guess {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+  }
+  .guess-number{
+    padding: 0 115px;
+  }
 }
-
-.guess-btn {
-  background-color: black;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-
-  margin-left: -10px;
+@media (min-width: 1999.98px) {
+  .guess-number {
+    padding: 0 277px;
+  }
 }
