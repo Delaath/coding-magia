@@ -1,0 +1,74 @@
+.calculator-title{
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+section.calculator {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+section.calculator input[type="text"] {
+    width: 120px;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    border: none;
+    font-family: "Montserrat Alternates";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+section.calculator .ops {
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: repeat(2, 40px);
+    gap: 6px;
+}
+
+section.calculator .ops button {
+    width: 40px;
+    height: 40px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    background: #000000;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+section.calculator .ops button:hover {
+    background: #ffffff;
+    color: black;
+    border: solid 1px #000;
+}
+
+section.calculator input#result {
+    width: 190px;
+    padding: 8px;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    border: none;
+}
