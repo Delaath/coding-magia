@@ -1,5 +1,18 @@
 <section class="guess-number container">
-    <h3 class="title-guess-number">Вгадай число, яке загадав комп’ютер</h3>
-    <input type="text-guess" placeholder="Введіть число" value="">
-    <button type="button-guess"><img src="" alt="search"></button>
+  <h3 class="title-guess-number">Вгадай число, яке загадав комп’ютер</h3>
+  <div class="all-guess">
+    <div class="guess-block">
+      <input
+        class="guess-input"
+        type="number"
+        placeholder="Введіть число"
+        id="guessInput"
+      />
+      <button class="guess-btn" id="checkBtn" type="button-guess">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="result-guess" id="guessText"></div>
+  </div>
+  <hr class="line-guess" />
 </section>

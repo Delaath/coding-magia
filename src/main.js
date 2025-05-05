@@ -1,0 +1,12 @@
+import './JS/entry-modal.js';
+import './JS/header.js';
+import './JS/birthday.js';
+import './JS/guess-number.js';
+import './JS/rps.js';
+import './JS/calculator.js';
+import './JS/time-calculator.js';
+import './JS/google-dino.js';
+import './JS/football.js';
+import './JS/three-numbers.js';
+import './JS/team.js';
+import './JS/scientist.js';

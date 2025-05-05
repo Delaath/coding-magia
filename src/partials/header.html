@@ -1,70 +1,76 @@
-<header class="header">
-    <div class="container1">
-      <div class="header__container">
-        <img src="./img/svg/logo.svg" alt="">
-        <nav class="header__nav">
-          <ul class="header__nav-list list">
-            <li class="header__nav-item">
-              <a class="header__nav-link link" data-dropdown-open>
-                Інтерактив
-                <svg class="header__nav-arrow" width="15" height="15" data-dropdown-arrow>
-                  <use href="img/svg/arrow.svg"></use>
-                </svg>
-              </a>
-              <ul class="header__dropdown" data-dropdown>
-                <li class="header__dropdown-item">
-                  <button type="button" class="header__dropdown-btn" data-changeBtn="all">
-                    Всі
-                  </button>
-                </li>
-                <li class="header__dropdown-item">
-                  <button type="button" class="header__dropdown-btn" data-changeBtn="numerical">
-                    Числовий
-                  </button>
-                </li>
-                <li class="header__dropdown-item">
-                  <button type="button" class="header__dropdown-btn" data-changeBtn="game">
-                    Ігровий
-                  </button>
-                </li>
-                <li class="header__dropdown-item">
-                  <button type="button" class="header__dropdown-btn" data-changeBtn="acquaintance">
-                    Ознайомчий
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="header__nav-item">
-              <a href="#ourTeam" class="header__nav-link link">Наша команда</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#footer" class="header__nav-link link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-  
-      <div class="theme-toggle" onclick="toggleTheme()">
-        <img src="./img/svg/sun.svg" alt="Light Mode" id="theme-icon">
-      </div>
-  
-      <script>
-        function toggleTheme() {
-          const body = document.body;
-          const themeIcon = document.getElementById('theme-icon');
-          if (body.classList.contains('dark-mode')) {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            themeIcon.src = "./img/svg/sun.svg"; // Change to sun icon
-            themeIcon.alt = "Light Mode";
-          } else {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            themeIcon.src = "./img/svg/moon.svg"; // Change to moon icon
-            themeIcon.alt = "Dark Mode";
-          }
-        }
-      </script>
-      <p class="header__welcome-text" id="output" data-welcome-open></p>
+<header class="header container">
+  <img class="logo" src="./img/svg/logo.svg" alt="" />
+  <div class="dropdown">
+    <button class="dropdown-toggle">
+      Інтерактив <img class="arrow" src="./img/svg/arrow.svg" alt="arrow">
+    </button>
+    <div class="dropdown-menu">
+      <a href="#">Числовий</a>
+      <a href="#">Ігровий</a>
+      <a href="#">Ознайомчий</a>
     </div>
-  </header>
+  </div>
+  
+  <ul class="header-link-list">
+    <li class="header-link-item">Наша команда</li>
+    <li class="header-link-item item2">Контакти</li>
+  </ul>
+  <p class="welcome-text" id="output" data-welcome-open></p>
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <div class="toggle-circle">
+      <img src="./img/svg/moon.svg" alt="Theme Icon" id="theme-icon" />
+    </div>
+  </div>
+  
+  
+  <button id="myBtn-menu" class="menu-btn">
+    <img src="./img/svg/menu_24px.svg" alt="" />
+  </button>
+
+  <div id="myModal-menu" class="modal-menu">
+    <div class="modal-content-menu">
+      <button class="close-menu">
+        <img class="img-close" src="img/svg/close.svg" alt="" />
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">Інтерактив</li>
+        <li class="nav-menu-item">Наша Команда</li>
+        <li class="nav-menu-item">Контакти</li>
+      </ul>
+      <ul class="nav-contacts">
+        <li class="nav-contacts-item">Тел: +38 (123) 456 78 90</li>
+        <li class="nav-contacts-item">E-Mail: codingmagic@gmail.com</li>
+      </ul>
+      <ul class="social-media">
+        <li class="social-media-item">Facebook</li>
+        <li class="social-media-item">Twitter</li>
+        <li class="social-media-item">Instagram</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="modal-text">Привіт!</p>
+      <p class="modal-text">
+        Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що вам
+        сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно провести
+        час!
+      </p>
+      <p class="modal-text modal-ask">Введіть своє ім’я:</p>
+      <div class="modal-input-box">
+        <input
+        id="modal-input"
+          type="name"
+          placeholder="Ваше ім’я..."
+          class="modal-input birhday-input"
+        />
+      </div>
+      <div class="modal-btn-box"><button class="modal-btn" id="myBtn">Зберегти</button></div>
+    </div>
+  </div>
+
+</div>
+
+</header>
