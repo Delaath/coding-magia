@@ -1,9 +1,41 @@
+@media (max-width: 600px) {
+    section.tree-num {
+        padding: 16px;
+        display: flex;
+       
+    }
+
+    /* Inputs wrapper: переносимо поля на новий ряд */
+    section.tree-num .inputs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* Кожне поле займає всю ширину, але не більше 100% контейнера */
+    section.tree-num .inputs input {
+        flex: 1 1 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Кнопка внизу — також на повну ширину */
+    section.tree-num button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
 
 section.tree-num {
     padding: 20px;
     max-width: 400px;
     margin: auto;
     border-radius: 8px;
+    flex-direction: row;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 }
 
 section.tree-num h2 {

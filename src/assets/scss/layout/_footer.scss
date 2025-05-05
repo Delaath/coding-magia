@@ -6,10 +6,21 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
+    flex-wrap: nowrap;
+
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+
+    }
 
     &-list {
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
+
+        @media (max-width: 600px) {
+            margin-bottom: 15px;
+        }
 
     }
 
