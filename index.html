@@ -7,8 +7,8 @@
     <title>Coding Magic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="module" crossorigin src="/coding-magia/assets/index-DBiWIqwy.js"></script>
-    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-DUjq9-ZB.css">
+    <script type="module" crossorigin src="/coding-magia/assets/index-Dpk2V05_.js"></script>
+    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-A3SEidXk.css">
   </head>
   <body>
       <header class="header container">
@@ -156,7 +156,21 @@
   <hr />
 </section>
 
-      <h1>6</h1>
+      <h3 class="calculator-title">Калькулятор</h3>
+<section class="calculator">
+    <input type="text" id="num1" placeholder="Введіть число">
+
+    <div class="ops">
+        <button data-op="+">+</button>
+        <button data-op="−">−</button>
+        <button data-op="×">×</button>
+        <button data-op="÷">÷</button>
+    </div>
+
+    <input type="text" id="num2" placeholder="Введіть число">
+
+    <input type="text" id="result" placeholder="Результат" readonly>
+</section>
       <section data-sect="numerical" class="time-calculator container">
   <h3 class="title-birhday">Калькулятор часу</h3>
   <div class="time-calculator-container">
@@ -206,41 +220,24 @@
         <hr class="random-line" />
     </div>
 </section>
-      <h1>9</h1>
-      <section class="three-numbers container">
-    <hr class="line-number" />
-  <div class="all-block">
-    <h3 class="title-number">Введіть 3 числа</h3>
-    <div class="block-number">
-      <input
-        placeholder="1-ше число"
-        type="number"
-        name=""
-        id="num1"
-        class="input-number input-number-1"
-      />
-      <input
-        placeholder="2-ге число"
-        type="number"
-        name=""
-        id="num2"
-        class="input-number input-number-2"
-      />
-      <input
-        placeholder="3-тє число"
-        type="number"
-        name=""
-        id="num3"
-        class="input-number input-number-3"
-      />
+      <h3 class="football-title">Футбол</h3>
+  <section class="football">
+    <div class="ball"></div>
+  </section>
 
-    </div>
-    <p class="text-number result">
-        Найбільше число, яке ви ввели - <span id="numbers-result"></span>
-      </p>
+      
+<hr>
+<section class="tree-num">
+  <h2>Введіть три числа</h2>
+  <div class="inputs">
+    <input type="text" id="num1" placeholder="Перше число">
+    <input type="text" id="num2" placeholder="Друге число">
+    <input type="text" id="num3" placeholder="Третє число">
   </div>
-  <hr class="line-number" />
+  <button id="calcBtn">Порахувати</button>
+  <p class="result-text">Найбільше число: <span id="resultValue">–</span></p>
 </section>
+
 
       <section class="team container">
 
@@ -311,21 +308,20 @@
   </section>
   
       <section class="container scientist">
-    <h3 class="scientist-title">Обери вченого/их</h3>
-    <ul class="scientist-galary">
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-        <li class="scientist-item"><img src="" alt="scientist" class="scientist-img"></li>
-    </ul>
+    <h3 class="scientist-title">Оберіть вченого/их</h3>
+    <ul class="scientist-gallery" id="scientistGallery"></ul>
+    <div class="output2" id="output1"></div>
+    <div id="controls">
+        <button data-action="born19">Народилися в 19 ст.</button>
+        <button data-action="einsteinYear">Рік народження Einstein</button>
+        <button data-action="sortAlpha">Сортувати за алфавітом</button>
+        <button data-action="surnameC">Прізвища на "С"</button>
+        <button data-action="sortLifespan">Сортувати за тривалістю життя</button>
+        <button data-action="deleteA">Видалити ім'я на "А"</button>
+        <button data-action="latestBorn">Народився останній</button>
+        <button data-action="lifespanExtremes">Найдовше/найкоротше життя</button>
+        <button data-action="sameInitials">Імена та прізвища з од. літери</button>
+    </div>
 </section>
       </main>
     <footer class="footer">
