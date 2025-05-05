@@ -25,15 +25,6 @@ a {
 }
 
 body {
-  hr {
-    display: block;
-    width: 280px;
-    height: 2px;
-    background-color: black;
-    border: none;
-    border-radius: 5px;
-    margin: 20px auto;
-  }
   h3 {
     font-size: 14px;
     font-family: Montserrat Alternates;
@@ -47,18 +38,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    hr {
-      width: 400px;
-    }
 
     h3 {
       font-size: 15px;
     }
   }
   @media screen and (min-width: 768px) {
-    hr {
-      width: 600px;
-    }
     h3 {
       font-size: 16px;
     }
