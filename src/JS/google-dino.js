@@ -90,12 +90,20 @@ function update() {
   requestAnimationFrame(update);
 }
 
-document.addEventListener("keydown", (e) => {
-  if (e.code === "KeyW" && dino.grounded) {
+function jump() {
+  if (dino.grounded) {
     dino.dy = dino.jumpPower;
     dino.grounded = false;
   }
+}
+
+document.addEventListener("keydown", (e) => {
+  if ((e.code === "KeyW" || e.code === "Space")) {
+    jump();
+  }
 });
+
+document.addEventListener("click", jump);
 
 restartButton.addEventListener("click", resetGame);
 
