@@ -25,6 +25,9 @@ a {
 }
 
 body {
+  .background-box {
+    background-color: white;
+  }
   h3 {
     font-size: 14px;
     font-family: Montserrat Alternates;
@@ -40,15 +43,11 @@ body {
     background-color: black;
     border: none;
     border-radius: 5px;
-    margin: 20px auto; 
+    margin: 20px auto;
     margin-top: 20px;
   }
-  
-  @media screen and (min-width: 480px) {
-    background-image: url(./img/coding_magic-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 
+  @media screen and (min-width: 480px) {
     hr {
       width: 400px;
     }
@@ -57,7 +56,13 @@ body {
       font-size: 15px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    main {
+      background-image: url(./img/coding_magic-background.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
     h3 {
       font-size: 16px;
     }
