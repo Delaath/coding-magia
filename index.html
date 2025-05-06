@@ -7,8 +7,8 @@
     <title>Coding Magic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="module" crossorigin src="/coding-magia/assets/index-CIqHqC2B.js"></script>
-    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-y8w7raOJ.css">
+    <script type="module" crossorigin src="/coding-magia/assets/index-B_EBxWJH.js"></script>
+    <link rel="stylesheet" crossorigin href="/coding-magia/assets/index-Du0EsZZt.css">
   </head>
   <body>
       <header class="header container">
@@ -89,12 +89,12 @@
 </header>
 
       <main>
+        <div class="background-box container">
       <section class="hero">
     <h1 class="title-hero">Популярні інетрактивні ігри</h1>
-    <hr class="line-hero  container">
+    <hr>
 </section>
-      
-<section class="birhday-check container">
+      <section class="birhday-check container">
   <h3 class="title-birhday">Перевір в який рік ти народився</h3>
   <div class="all-birthday">
     <div class="birhday-block">
@@ -170,8 +170,8 @@
     <input type="text" id="num2" placeholder="Введіть число">
 
     <input type="text" id="result" placeholder="Результат" readonly>
-    <hr class="line">
 </section>
+<hr>
       <section data-sect="numerical" class="time-calculator container">
   <h3 class="title-birhday">Калькулятор часу</h3>
   <div class="time-calculator-container">
@@ -270,7 +270,12 @@
         <img src="data:image/svg+xml,%3csvg%20width='11'%20height='7'%20viewBox='0%200%2011%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%201L5.5%206L1%201'%20stroke='black'%20stroke-width='0.75'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="arrow-svg">
       </div>
   
-  
+      <div class="slide active">
+        <img src="/coding-magia/assets/codestorm-DdtwBXZL.png" class="profile-pic" alt="Фото студента">
+        <h3 class="name">CodeStorm</h3>
+        <p class="description">Our Team</p>
+      </div>
+
       <div class="slide">
         <img src="/coding-magia/assets/danyl-ck4WN9PA.png" class="profile-pic" alt="Фото студента">
         <h3 class="name">Danyl</h3>
@@ -278,7 +283,7 @@
       </div>
   
   
-      <div class="slide active">
+      <div class="slide">
         <img src="/coding-magia/assets/daryna-DirM5g_X.jpg" class="profile-pic" alt="Фото студента">
         <h3 class="name">Petkanych Daryna</h3>
         <p class="description">Developer</p>
@@ -297,6 +302,7 @@
   
     <div class="dots">
       <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
       <span class="dot" onclick="setSlide(1)"></span>
       <span class="dot" onclick="setSlide(1)"></span>
     </div>
@@ -344,7 +350,7 @@
         <button data-action="lifespanExtremes">Найдовше/найкоротше життя</button>
         <button data-action="sameInitials">Імена та прізвища з од. літери</button>
     </div>
-</section>
+</section></div>
       </main>
     <footer class="footer">
     <section class="container footer">
