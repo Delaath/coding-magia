@@ -1,4 +1,7 @@
 @media (min-width: 320px) {
+  .guess-number {
+    min-width: 0px;
+  }
   .title-guess-number {
     color: black;
     font-size: 14px;
@@ -55,29 +58,20 @@
     font-weight: 400;
     word-wrap: break-word;
   }
-  .guess-number{
-    padding: 0 48px;
-  }
 }
 @media (min-width: 436.98px) {
+  .guess-number{
+    width: 536px;
+  }
   .all-guess {
     flex-direction: column;
   }
-
 }
 @media (min-width: 767.98px) {
   .all-guess {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    justify-content: space-between;
     flex-direction: row;
-  }
-  .guess-number{
-    padding: 0 115px;
-  }
-}
-@media (min-width: 1999.98px) {
-  .guess-number {
-    padding: 0 277px;
   }
 }
