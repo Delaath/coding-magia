@@ -33,10 +33,25 @@ body {
     text-align: center;
     padding-top: 13px;
   }
+  hr {
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto; 
+    margin-top: 20px;
+  }
+  
   @media screen and (min-width: 480px) {
     background-image: url(./img/coding_magic-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    hr {
+      width: 400px;
+    }
 
     h3 {
       font-size: 15px;
@@ -45,6 +60,9 @@ body {
   @media screen and (min-width: 768px) {
     h3 {
       font-size: 16px;
+    }
+    hr {
+      width: 600px;
     }
   }
 }
