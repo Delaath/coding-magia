@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .three-numbers{
-      padding: 0 48px;
+    min-width: 0px;
   }
 .all-block {
 }
@@ -32,6 +32,8 @@
   display: flex;
   justify-content: center;
   gap: 5px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text-number {
@@ -63,9 +65,7 @@
   .block-number {
     gap: 38px;
   }
-}
-@media (min-width: 1999.98px) {
-  .three-numbers{
-      padding: 0 277px;
+  .block-number {
+    flex-direction: row;
   }
 }

@@ -1,4 +1,7 @@
 @media (min-width: 320px) {
+  .birhday-check{
+    min-width: 0px;
+  }
   .title-birhday {
     color: black;
     font-size: 14px;
@@ -55,32 +58,25 @@
     font-weight: 400;
     word-wrap: break-word;
   }
-  .birhday-check {
-    padding: 0 48px;
-  }
 }
 
 @media (min-width: 436.98px) {
+  .birhday-check{
+    width: 536px;
+  }
   .all-birthday {
     flex-direction: column;
   }
 
 }
 @media (min-width: 767.98px) {
+
   .all-birthday {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+justify-content: space-between;
     flex-direction: row;
   }
 
-  .birhday-check {
-    padding: 0 115px;
-  }
 }
 
-@media (min-width: 1999.98px) {
-.birhday-check {
-    padding: 0 300px;
-  }
-}
