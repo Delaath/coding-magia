@@ -1,0 +1,40 @@
+.football {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 4 / 1.5;
+    margin: 40px auto;
+    background: #4CAF50;
+    border: 4px solid #000;
+    border-radius: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.football .ball {
+    position: absolute;
+    width: 6%;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at 30% 30%,
+            #FFF 30%,
+            #000 31%,
+            #000 35%,
+            #FFF 36%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: left 0.4s ease, top 0.4s ease;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+}
+.football-title {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 35px;
+}

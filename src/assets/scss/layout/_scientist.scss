@@ -1,0 +1,75 @@
+.container.scientist {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  .scientist-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  #controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  #controls button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  #controls button:hover {
+    background: #e0e0e0;
+    color: black;
+  }
+
+  #output1 {
+    min-height: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .scientist-gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  .scientist-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  .scientist-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
+  }
+  .scientist-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .scientist-years {
+    font-size: .9rem;
+    color: #555;
+  }
