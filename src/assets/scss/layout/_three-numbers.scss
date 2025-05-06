@@ -1,104 +1,71 @@
-@media (max-width: 600px) {
-    section.tree-num {
-        padding: 16px;
-        display: flex;
-       
-    }
+@media (min-width: 320px) {
+  .three-numbers{
+      padding: 0 48px;
+  }
+.all-block {
+}
+.title-number {
+  color: black;
+  font-size: 16px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding: 36px;
+}
+.input-number {
+  color: #7e7e7e;
+  font-size: 12px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  word-wrap: break-word;
 
-    /* Inputs wrapper: переносимо поля на новий ряд */
-    section.tree-num .inputs {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
+  background-color: #d7d7d7;
+  padding: 5px 10px;
+  border: none;
+  width: 100px;
+  border-radius: 20px;
 
-    /* Кожне поле займає всю ширину, але не більше 100% контейнера */
-    section.tree-num .inputs input {
-        flex: 1 1 100%;
-        max-width: 300px;
-        box-sizing: border-box;
-    }
-
-    /* Кнопка внизу — також на повну ширину */
-    section.tree-num button {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
+  display: flex;
+  justify-content: center;
+}
+.block-number {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-section.tree-num {
-    padding: 20px;
-    max-width: 400px;
-    margin: auto;
-    border-radius: 8px;
-    flex-direction: row;
-    @media (max-width: 600px) {
-        flex-direction: column;
-    }
+.text-number {
+  color: black;
+  font-size: 12px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  word-wrap: break-word;
+
+  text-align: center;
+
+  padding: 36px 0 36px;
+
 }
-
-section.tree-num h2 {
-    text-align: center;
-    margin-bottom: 45px;
-    font-family: "Montserrat Alternates";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
-
-.tree-num .inputs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-    justify-content: center;
+@media (min-width: 479.98px) {
+.block-number {
+  gap: 10px;
 }
-
-.tree-num .inputs input {
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 20px;
-    border: none;
-    text-align: center;
-    color: #7E7E7E;
-
-    font-family: "Montserrat Alternates";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: #D7D7D7;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+.input-number {
+  padding: 10px 20px;
+  width: 135px;
 }
-
-.tree-num button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    background: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: ease 0.2s;
 }
-
-.tree-num button:hover {
-    background: #ffffff;
-    color: black;
+@media (min-width: 767.98px) {
+  .three-numbers{
+      padding: 0 115px;
+  }
+  .block-number {
+    gap: 38px;
+  }
 }
-
-.tree-num .result-text {
-    margin-top: 45px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.tree-num .result-text.error {
-    color: #d9534f;
-}
-
-.tree-num .result-text.success {
-    color: #155724;
+@media (min-width: 1999.98px) {
+  .three-numbers{
+      padding: 0 277px;
+  }
 }

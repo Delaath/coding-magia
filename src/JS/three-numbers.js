@@ -1,27 +1,17 @@
+document.querySelectorAll('.input-number').forEach(input => {
+  input.addEventListener('input', findMax);
+});
 
-document.getElementById('calcBtn').addEventListener('click', () => {
-    const vals = [
-      document.getElementById('num1').value.trim(),
-      document.getElementById('num2').value.trim(),
-      document.getElementById('num3').value.trim()
-    ];
-    const nums = vals.map(v => {
-      const n = Number(v);
-      return (v === '' || Number.isNaN(n)) ? null : n;
-    });
+export function findMax() {
+  let num1 = parseFloat(document.querySelector(".input-number-1").value);
+  let num2 = parseFloat(document.querySelector(".input-number-2").value);
+  let num3 = parseFloat(document.querySelector(".input-number-3").value);
+  let resultElement = document.querySelector(".result");
 
-    const resultText = document.querySelector('.tree-num .result-text');
-    const resultValue = document.getElementById('resultValue');
-
-    if (nums.includes(null)) {
-      resultText.classList.remove('success');
-      resultText.classList.add('error');
-      resultValue.textContent = 'некоректний ввід';
-      return;
-    }
-
-    const max = Math.max(...nums);
-    resultText.classList.remove('error');
-    resultText.classList.add('success');
-    resultValue.textContent = max;
-  });
+  if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+    let maxNumber = Math.max(num1, num2, num3);
+    resultElement.innerText = "Найбільше число, яке ви ввели - " + maxNumber;
+  } else {
+    resultElement.innerText = "Будь ласка, введіть всі три числа коректно.";
+  }
+}
