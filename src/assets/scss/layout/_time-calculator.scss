@@ -2,7 +2,6 @@
   min-width: 0px;
   font-family: Montserrat Alternates;
 
-
   .dots-result-box {
     font-family: "Montserrat Alternates";
     font-size: 12px;
@@ -13,23 +12,22 @@
   }
   .time-calculator-lines {
     display: none;
-}
+  }
 
   @media screen and (min-width: 480px) {
-
     .time-calculator-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    
+
     .dots-result-box {
       padding-bottom: 10px;
     }
 
     .time-calculator-lines {
-        display: block;
-        padding-bottom: 10px;
+      display: block;
+      padding-bottom: 10px;
     }
   }
 
@@ -38,6 +36,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: baseline;
+      padding: 0 100px;
     }
   }
 }

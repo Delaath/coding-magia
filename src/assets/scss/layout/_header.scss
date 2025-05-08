@@ -81,9 +81,6 @@
       padding-right: 30px;
       transition: color 0.3s ease-in-out;
     }
-    .item2 {
-      padding-right: 300px;
-    }
     .header-link-item:hover {
       color: #8acecf;
     }
@@ -152,6 +149,11 @@
 
     .dark-mode .dropdown-menu a:hover {
       background-color: #444;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .item2 {
+      padding-right: 300px;
     }
   }
 }
