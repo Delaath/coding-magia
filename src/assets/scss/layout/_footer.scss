@@ -37,6 +37,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-wrap: nowrap;
+    @media (max-width: 486px) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
     input[type="email"] {
         color: #7E7E7E;
