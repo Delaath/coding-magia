@@ -1,17 +1,22 @@
-document.querySelectorAll('.input-number').forEach(input => {
-  input.addEventListener('input', findMax);
+document.querySelectorAll(".input-number").forEach((input) => {
+  input.addEventListener("input", findMax);
 });
 
 export function findMax() {
-  let num1 = parseFloat(document.querySelector(".input-number-1").value);
-  let num2 = parseFloat(document.querySelector(".input-number-2").value);
-  let num3 = parseFloat(document.querySelector(".input-number-3").value);
-  let resultElement = document.querySelector(".result");
+  const num1 = parseFloat(document.querySelector(".input-number-1").value);
+  const num2 = parseFloat(document.querySelector(".input-number-2").value);
+  const num3 = parseFloat(document.querySelector(".input-number-3").value);
+  const resultSpan = document.getElementById("numbers-result");
+
+  resultSpan.classList.remove("result-animate");
+  void resultSpan.offsetWidth;
 
   if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
-    let maxNumber = Math.max(num1, num2, num3);
-    resultElement.innerText = "Найбільше число, яке ви ввели - " + maxNumber;
+    const maxNumber = Math.max(num1, num2, num3);
+    resultSpan.textContent = maxNumber;
   } else {
-    resultElement.innerText = "Будь ласка, введіть всі три числа коректно.";
+    resultSpan.textContent = "—";
   }
+
+  resultSpan.classList.add("result-animate");
 }
