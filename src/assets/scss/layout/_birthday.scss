@@ -57,7 +57,10 @@
     font-family: Montserrat Alternates;
     font-weight: 400;
     word-wrap: break-word;
+
+
   }
+
 }
 
 @media (min-width: 436.98px) {
@@ -79,4 +82,50 @@ justify-content: space-between;
   }
 
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.result-birthday {
+  opacity: 1;
+}
+
+
+.result-birthday.error {
+  color: red;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.result-birthday.success {
+  color: green;
+  animation: fadeInScale 0.4s ease-out;
+}
+
+.result-birthday.info {
+  color: #007bff; 
+  animation: shake 0.4s ease-in-out;
+}
